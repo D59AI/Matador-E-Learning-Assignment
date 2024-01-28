@@ -1,0 +1,113 @@
+    body {
+      font-family: 'Times New Roman', Times, serif;
+      font-weight: 100;
+      font-size: medium;
+      overflow-x: hidden; /* Prevent horizontal scrolling */
+    }
+    header {
+      background-color: #007bff;
+      padding: 10px;
+      text-align: center;
+      color: #fff;
+    }
+    nav {
+      background-color: #1b18b8;
+      color:azure;
+      padding: 20px;
+      font-family: Arial, Helvetica, sans-serif;
+      font-weight: 200;
+    }
+    .nav-link{
+      color:azure
+    }
+    li a:hover {
+      background-color: #f0f1e9;
+    }
+    .container h2{
+      color: black;
+      font-family: 'Times New Roman', Times, serif;
+      padding-right: 0px;
+      padding-left: 0.025%;
+      padding-top: 10px;
+      font-weight: 600;
+    }
+    .container h3{
+      color: darkblue;
+      font-family: 'Times New Roman', Times, serif;
+    }
+    .container {
+      margin-top: 20px;
+      font-family: 'Times New Roman', Times, serif;
+      font-size: larger;
+      color: #1b18b8;
+      font-weight: 500;
+    }
+    .footer {
+      background-color: #343a40;
+      color: #fff;
+      padding: 20px;
+      height: 90px;
+      text-align: center;
+      padding-top: 30px;
+      position: fixed;
+      bottom: 0;
+      width: 100%;
+      font-weight: 100;
+      font-size: larger;
+    }
+    .book-list {
+      list-style-type: disc;
+      margin-left: 10px;
+      color: #1b18b8;
+      font-size: larger;
+      font-weight: 500;
+    }
+    .toc {
+      font-weight: bold;
+      font-size: 1.2em;
+      color: #007bff;
+    }
+    .indent {
+      margin-left: 20px;
+    }
+    .blue-text {
+      color: blue;
+    }
+    .green-text {
+      color: green;
+    }
+    .red-text {
+      color: red;
+    }
+       /* Contact Us Panel Styles */
+       #contact-panel {
+        position: absolute;
+        top: 75px;
+        left: 72%;
+        right:0px;
+        height: 100%;
+        width: 500px;
+        background-color: #e3e09b;
+        padding-top: 40px;
+        padding-left: 50px;
+        box-shadow: -4px 0px 5px -2px rgba(226, 227, 205, 0.99);
+      }
+      #contact-panel h4 {
+        color: #1b1a1acf;
+        font-family: 'Times New Roman', Times, serif;
+      }
+      #contact-panel p {
+        margin-bottom: 10px;
+      }
+      .close-btn {
+        position: absolute;
+        top: 20px;
+        left: 430px;
+        right: 0px;
+        font-size: 20px;
+        cursor: pointer;
+        color: brown;
+        font-weight: 700;
+      }
+      
+  

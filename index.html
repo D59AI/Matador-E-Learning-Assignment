@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Matador E-Learning</title>
+  <!-- Favicon -->
+  <link rel="icon" href="Matador E-Learning Icon.png" type="Matador E-Learning Icon">
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="styles.css">
+
+</head>
+<body>
+
+<header>
+  <h1>Matador E-Learning</h1>
+</header>
+
+<nav>
+  <ul class="nav">
+    <li class="nav-item"><a class="nav-link" href="homepage.html"target="">Home</a></li>
+    <li class="nav-item"><a class="nav-link" href="about.html" target="">About Us</a></li>
+    <li class="nav-item"><a class="nav-link" href="index.html"target="">Content</a></li>
+    <li class="nav-item"><a id="contact-us-btn" class="nav-link">Contact Us</a></li>
+  </ul>
+</nav>
+
+
+<div class="container">
+  <!-- Book List with Bullet Points -->
+  <ul class="book-list">
+    <h2>List of Books</h2>
+    <li><a href="java-toc.html" target="">Java</a></li>
+    <li><a href="python-toc.html" target="">Python</a></li>
+    <li><a href="c-language-toc.html" target="">C Language</a></li>
+  </ul>
+
+  <!-- TOC for Java -->
+  <div id="java-toc" class="toc">
+    <h3>Table of Contents - Java</h3>
+    <ul>
+      <li class="indent blue-text">Chapter 1</li>
+      <ul>
+        <li class="indent green-text">Topic 1.1</li>
+        <li class="indent green-text">Topic 1.2</li>
+      </ul>
+      <li class="indent red-text">Chapter 2</li>
+      <ul>
+        <li class="indent blue-text">Topic 2.1</li>
+        <ul>
+          <li class="indent red-text">Subtopic 2.1.1</li>
+        </ul>
+        <li class="indent green-text">Topic 2.2</li>
+      </ul>
+    </ul>
+  </div>
+
+  <!-- TOC for Python -->
+  <div id="python-toc" class="toc">
+    <h3>Table of Contents - Python</h3>
+    <ul>
+        <li class="indent blue-text">Chapter 1</li>
+        <ul>
+          <li class="indent green-text">Topic 1.1</li>
+          <li class="indent green-text">Topic 1.2</li>
+        </ul>
+        <li class="indent red-text">Chapter 2</li>
+        <ul>
+          <li class="indent blue-text">Topic 2.1</li>
+          <ul>
+            <li class="indent red-text">Subtopic 2.1.1</li>
+          </ul>
+          <li class="indent green-text">Topic 2.2</li>
+        </ul>
+      </ul>
+  </div>
+
+  <!-- TOC for C Language -->
+  <div id="c-language-toc" class="toc">
+    <h3>Table of Contents - C Language</h3>
+    <ul>
+        <li class="indent blue-text">Chapter 1</li>
+        <ul>
+          <li class="indent green-text">Topic 1.1</li>
+          <li class="indent green-text">Topic 1.2</li>
+        </ul>
+        <li class="indent red-text">Chapter 2</li>
+        <ul>
+          <li class="indent blue-text">Topic 2.1</li>
+          <ul>
+            <li class="indent red-text">Subtopic 2.1.1</li>
+          </ul>
+          <li class="indent green-text">Topic 2.2</li><br><br><br/><br>
+        </ul>
+      </ul>
+  </div>
+</div>
+
+
+
+<div id="contact-panel" style="display: none;">
+  <h4>Contact Information</h4>
+  <span class="close-btn" onclick="closeContactPanel()">&times;</span>
+  <p>Email: info@matador-elearning.com</p>
+  <p>Phone: +1 123-456-7890</p>
+  <p>Address: 123 Learning Street, Cityville, Texas, USA</p>
+</div>
+  <script src="script.js"></script>
+<!-- Footer -->
+<div class="footer">
+  <p>Email: info@matador-elearning.com | &copy; Matador E-Learning</p>
+</div>
+
+
+
+<!-- Bootstrap JS and Popper.js -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+ 
+<!-- Custom JavaScript -->
+<script src="script.js"></script>
+<script>
+  document.addEventListener('DOMContentLoaded', function() {
+    var contactUsBtn = document.getElementById('contact-us-btn');
+    var contactPanel = document.getElementById('contact-panel');
+    var closeBtn = document.querySelector('#contact-panel .close-btn');
+
+    // Set the initial display property to 'none'
+    contactPanel.style.display = 'none';
+
+    contactUsBtn.addEventListener('click', function() {
+      // Toggle the display of the contact panel
+      contactPanel.style.display = (contactPanel.style.display === 'none') ? 'block' : 'none';
+    });
+
+    closeBtn.addEventListener('click', function() {
+      // Hide the contact panel when close button is clicked
+      contactPanel.style.display = 'none';
+
+    /*contactUsBtn.addEventListener('click', function() {
+      contactPanel.style.display = 'block';
+    });
+
+    closeBtn.addEventListener('click', function() {
+      contactPanel.style.display = 'none'; */
+    });
+  }); 
+</script>
+ 
+
+</body>
+</html>
