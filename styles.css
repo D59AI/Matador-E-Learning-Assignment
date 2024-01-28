@@ -101,13 +101,14 @@
       }
       .close-btn {
         position: absolute;
-        top: 20px;
-        left: 430px;
+        top: 10px;
+        left: 398px;
         right: 0px;
-        font-size: 20px;
+        font-size: 50px;
         cursor: pointer;
         color: brown;
         font-weight: 700;
+
       }
       
   
